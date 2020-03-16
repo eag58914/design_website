@@ -1,11 +1,10 @@
 import React from 'react';
+import styles from './TitlePage.module.css';
 
 const TitlePage = () => {
 	return (
-		<div>
+		<div className={styles.container}>
 			<h1>AMANDA</h1>
-			<h2>LORRAINE</h2>
-			<h2>HIRSCH</h2>
 		</div>
 	);
 };
