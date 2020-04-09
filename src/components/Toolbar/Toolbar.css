@@ -13,9 +13,11 @@
 }
 .toolbar_navigation {
 	display: flex;
+	flex-direction: row-reverse;
 	height: 100%;
 	align-items: center;
 	padding: 0 rem;
+	justify-content: space-evenly;
 }
 .toolbar_navigation-items a {
 	color: white;
@@ -23,7 +25,7 @@
 }
 .toolbar_navigation-items ul {
 	list-style: none;
-	margin: 0;
+	margin: 6px;
 	padding: 0;
 	display: flex;
 }
@@ -38,7 +40,8 @@
 	flex: 1;
 }
 .toolbar__logo {
-	margin-left: 1rem;
+	margin-right: 1rem;
+	padding: 6px;
 }
 @media (max-width: 768px) {
 	.toolbar_navigation-items {
