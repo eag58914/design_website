@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch, Link, BrowserRouter as Router } from 'react-router-dom';
 import MainPage from '../src/pages/MainPage/MainPage';
 import ContactPage from './pages/ContactPage/ContactPage';
+import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
@@ -34,6 +35,7 @@ class App extends Component {
 					<Switch>
 						<Route path="/main" render={() => <MainPage />} />
 						<Route path="/contact" render={() => <ContactPage />} />
+						<Route path="/projects" render={() => <ProjectsPage />} />
 					</Switch>
 				</Router>
 			</div>
