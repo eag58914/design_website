@@ -7,17 +7,17 @@ const images = [
 	{
 		original: 'https://picsum.photos/id/1015/1000/600/',
 		thumbnail: 'https://picsum.photos/id/1018/250/150/',
-		description:
-			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laborum maiores consequuntur quidem obcaecati. Itaque porro magni illo sit cupiditate rem doloremque natus recusandae impedit consequuntur, ratione libero voluptates! Nobis.',
-		sizes: '16x16'
+		description: 'this is 1'
 	},
 	{
 		original: 'https://picsum.photos/id/1015/1000/600/',
-		thumbnail: 'https://picsum.photos/id/1015/250/150/'
+		thumbnail: 'https://picsum.photos/id/1015/250/150/',
+		description: 'this is 2'
 	},
 	{
 		original: 'https://picsum.photos/id/1019/1000/600/',
-		thumbnail: 'https://picsum.photos/id/1019/250/150/'
+		thumbnail: 'https://picsum.photos/id/1019/250/150/',
+		description: 'this is 3'
 	}
 ];
 
@@ -31,6 +31,11 @@ class MyGallery extends React.Component {
 					showPlayButton={false}
 					useBrowserFullscreen={false}
 				/>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique deleniti optio quis ab, officia
+					quod. Ad ab minus pariatur tempora, repellendus, architecto facere asperiores alias beatae vitae
+					perferendis ullam atque?
+				</p>
 			</div>
 		);
 	}
