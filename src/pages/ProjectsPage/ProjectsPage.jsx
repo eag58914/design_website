@@ -1,12 +1,12 @@
 import React from 'react';
 import Slider from '../../components/Slider/Slider';
-
-const ProjectsPage = () => {
+import './ProjectsPage.css';
+const ProjectPage = () => {
 	return (
-		<div>
+		<div className="slider">
 			<Slider />
 		</div>
 	);
 };
 
-export default ProjectsPage;
+export default ProjectPage;
