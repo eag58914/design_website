@@ -1,1 +1,5 @@
-
+.img-gallery,
+ImageGallery {
+	width: 75%;
+	height: 50%;
+}
