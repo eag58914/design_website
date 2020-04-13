@@ -1,4 +1,6 @@
 import React from 'react';
+import { Route, Switch, Link, BrowserRouter as Router } from 'react-router-dom';
+import Slider from '../../components/Slider/Slider';
 import './SideDrawer.css';
 
 const sideDrawer = (props) => {
@@ -13,6 +15,9 @@ const sideDrawer = (props) => {
 					<li>Linkedin </li>
 					<li>Instagram</li>
 					<li>Twitter</li>
+					<li>
+						<a href="/projects"> Projects</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
