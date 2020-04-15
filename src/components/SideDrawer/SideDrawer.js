@@ -1,6 +1,4 @@
 import React from 'react';
-import { Route, Switch, Link, BrowserRouter as Router } from 'react-router-dom';
-import Slider from '../../components/Slider/Slider';
 import './SideDrawer.css';
 import LinkedinLogo from '../../images/linkedin.png';
 import InstagramLogo from '../../images/instagram.png';
