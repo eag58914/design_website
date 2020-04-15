@@ -6,18 +6,15 @@ import './Slider.css';
 const images = [
 	{
 		original: 'https://picsum.photos/id/1015/1000/600/',
-		thumbnail: 'https://picsum.photos/id/1018/250/150/',
-		description: 'this is 1'
+		thumbnail: 'https://picsum.photos/id/1018/250/150/'
 	},
 	{
 		original: 'https://picsum.photos/id/1015/1000/600/',
-		thumbnail: 'https://picsum.photos/id/1015/250/150/',
-		description: 'this is 2'
+		thumbnail: 'https://picsum.photos/id/1015/250/150/'
 	},
 	{
 		original: 'https://picsum.photos/id/1019/1000/600/',
-		thumbnail: 'https://picsum.photos/id/1019/250/150/',
-		description: 'this is 3'
+		thumbnail: 'https://picsum.photos/id/1019/250/150/'
 	}
 ];
 
