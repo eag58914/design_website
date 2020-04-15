@@ -3,7 +3,7 @@ import { Route, Switch, Link, BrowserRouter as Router } from 'react-router-dom';
 import Slider from '../../components/Slider/Slider';
 import './SideDrawer.css';
 import LinkedinLogo from '../../images/linkedin.png';
-import InstagramLogo from '../../images/instagram-symbol.png';
+import InstagramLogo from '../../images/instagram.png';
 import TwitterLogo from '../../images/twitter.png';
 const sideDrawer = (props) => {
 	let drawerClasses = 'side-drawer';
@@ -13,7 +13,10 @@ const sideDrawer = (props) => {
 	return (
 		<div>
 			<nav className={drawerClasses}>
-				<a href="/projects"> Projects</a>
+				<a href="/">Home</a>
+				<a href="/projects">Projects</a>
+				<a href="/about">About Me</a>
+
 				<ul>
 					<li>
 						<img src={LinkedinLogo} alt="linked-in logo" className="link-logo" />
