@@ -12,6 +12,7 @@
     "@types/react-dom": "^16.9.5",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-grid-gallery": "^0.5.5",
     "react-image-gallery": "^1.0.7",
     "react-responsive-carousel": "^3.1.57",
     "react-router-dom": "^5.1.2",
