@@ -11,10 +11,11 @@ const sideDrawer = (props) => {
 	return (
 		<div>
 			<nav className={drawerClasses}>
-				<a href="/">Home</a>
-				<a href="/projects">Projects</a>
-				<a href="/about">About Me</a>
-
+				<div className="nav-container">
+					<a href="/">HOME</a>
+					<a href="/projects">PROJECTS</a>
+					<a href="/about">ABOUT ME</a>
+				</div>
 				<ul>
 					<li>
 						<img src={LinkedinLogo} alt="linked-in logo" className="link-logo" />
