@@ -14,12 +14,14 @@ ul {
 .thumbnail-li {
 	height: 40vh;
 	flex-grow: 1;
+	position: relative;
+	padding: 10px;
 }
 
 .thumbnail-image {
 	max-height: 100%;
 	min-width: 100%;
-	object-fit: cover;
+	object-fit: scale-down;
 	vertical-align: bottom;
 }
 .thumbnail-li:last-child {
@@ -55,4 +57,33 @@ ul {
 		max-height: 75vh;
 		min-width: 0;
 	}
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .4s ease;
+}
+
+.thumbnail-li:hover .overlay {
+	height: 100%;
+	opacity: 0.5;
 }
