@@ -3,6 +3,7 @@ import './SideDrawer.css';
 import LinkedinLogo from '../../images/linkedin.png';
 import InstagramLogo from '../../images/instagram.png';
 import TwitterLogo from '../../images/twitter.png';
+import Aimage from '../../images/ALO2.JPG';
 const sideDrawer = (props) => {
 	let drawerClasses = 'side-drawer';
 	if (props.show) {
@@ -11,6 +12,9 @@ const sideDrawer = (props) => {
 	return (
 		<div>
 			<nav className={drawerClasses}>
+				<div class="image-cropper">
+					<img src={Aimage} alt="a_image" className="a-image" />
+				</div>
 				<div className="nav-container">
 					<a href="/">HOME</a>
 					<a href="/projects">PROJECTS</a>
