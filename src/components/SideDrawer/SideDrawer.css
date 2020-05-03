@@ -27,7 +27,6 @@
 .side-drawer a {
 	color: black;
 	text-decoration: none;
-	padding: 20px;
 }
 .side-drawer a:hover,
 .side-drawer a:active {
@@ -76,4 +75,7 @@
 	width: 100%;
 	height: auto;
 	object-fit: fill;
+}
+.text-links {
+	padding: 20px;
 }

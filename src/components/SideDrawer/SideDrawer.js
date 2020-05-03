@@ -16,19 +16,31 @@ const sideDrawer = (props) => {
 					<img src={Aimage} alt="a_image" className="a-image" />
 				</div>
 				<div className="nav-container">
-					<a href="/">HOME</a>
-					<a href="/projects">PROJECTS</a>
-					<a href="/about">ABOUT ME</a>
+					<a href="/" className="text-links">
+						HOME
+					</a>
+					<a href="/projects" className="text-links">
+						PROJECTS
+					</a>
+					<a href="/about" className="text-links">
+						ABOUT ME
+					</a>
 				</div>
 				<ul>
 					<li>
-						<img src={LinkedinLogo} alt="linked-in logo" className="link-logo" />
+						<a href="https://www.linkedin.com/in/amanda-hirsch-27476871">
+							<img src={LinkedinLogo} alt="linked-in logo" className="link-logo" />
+						</a>
 					</li>
 					<li>
-						<img src={InstagramLogo} alt="instagram logo" className="instagram-logo" />
+						<a href="https://www.linkedin.com/in/amanda-hirsch-27476871">
+							<img src={InstagramLogo} alt="instagram logo" className="instagram-logo" />
+						</a>
 					</li>
 					<li>
-						<img src={TwitterLogo} alt="twitter-logo" className="twitter-logo" />
+						<a href="https://www.linkedin.com/in/amanda-hirsch-27476871">
+							<img src={TwitterLogo} alt="twitter-logo" className="twitter-logo" />
+						</a>
 					</li>
 				</ul>
 			</nav>
