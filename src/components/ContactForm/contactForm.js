@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
+import axios from 'axios';
 
-class ContactForm extends React.Component {
+class ContactForm extends Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		const name = document.getElementById('name').value;
@@ -22,25 +23,33 @@ class ContactForm extends React.Component {
 				alert('Message failed to send.');
 			}
 		});
+	}
 
+	resetForm() {
+		document.getElementById('contact-form').reset();
+	}
+
+	render() {
 		return (
 			<div>
-				<form onSubmit={this.handleSubmit.bind(this)} method="POST">
+				<form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
 					<div>
-						<label htmlFor="name">Name</label>
-						<input type="text" id="name" />
+						<label for="name">Name</label>
+						<input type="text" className="form-control" id="name" />
 					</div>
 					<div>
-						<label htmlFor="exampleInputEmail1">Email address</label>
-						<input type="email" id="email" />
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" id="email" aria-describedby="emailHelp" />
 					</div>
 					<div>
-						<label htmlFor="message">Message</label>
-						<textarea id="message" />
+						<label for="message">Message</label>
+						<textarea rows="5" id="message" />
 					</div>
+					<button type="submit">Submit</button>
 				</form>
 			</div>
 		);
 	}
 }
+
 export default ContactForm;
