@@ -1,5 +1,6 @@
 import React from 'react';
 import mainImage from '../../images/Grafiti.png';
+import ContactForm from '../../components/ContactForm/contactForm';
 import './ContactPage.css';
 
 const ContactPage = (props) => {
@@ -11,6 +12,7 @@ const ContactPage = (props) => {
 				I’m an introvert — I only leave the house if there’s promise of alcohol or architecture. Resume
 				attached. Referrals by request only. Thanks
 			</p>
+			<ContactForm />
 		</div>
 	);
 };
