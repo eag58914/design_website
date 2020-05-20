@@ -12,7 +12,7 @@ const sideDrawer = (props) => {
 	return (
 		<div>
 			<nav className={drawerClasses}>
-				<div class="image-cropper">
+				<div className="image-cropper">
 					<img src={Aimage} alt="a_image" className="a-image" />
 				</div>
 				<div className="nav-container">
@@ -22,7 +22,7 @@ const sideDrawer = (props) => {
 					<a href="/projects" className="text-links">
 						PROJECTS
 					</a>
-					<a href="/about" className="text-links">
+					<a href="/contact" className="text-links">
 						ABOUT ME
 					</a>
 				</div>
