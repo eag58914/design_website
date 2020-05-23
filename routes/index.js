@@ -29,7 +29,7 @@ router.post('/send', (req, res, next) => {
 
 	var mail = {
 		from: name,
-		to: 'RECEIVING_EMAIL_ADDRESS_GOES_HERE', //Change to email address that you want to receive messages on
+		to: 'alohidesigncontact@gmail.com',
 		subject: 'New Message from Contact Form',
 		text: content
 	};
