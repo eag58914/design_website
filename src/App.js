@@ -6,6 +6,7 @@ import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
+import StickyFooter from 'react-sticky-footer';
 import './App.css';
 
 class App extends Component {
@@ -38,6 +39,19 @@ class App extends Component {
 						<Route path="/projects" render={() => <ProjectsPage />} />
 					</Switch>
 				</Router>
+				<StickyFooter
+					bottomThreshold={40}
+					normalStyles={{
+						backgroundColor: '#999999',
+						padding: '1rem'
+					}}
+					stickyStyles={{
+						backgroundColor: 'rgba(255,255,255,.2)',
+						padding: '2rem'
+					}}
+				>
+					Add any footer markup here
+				</StickyFooter>
 			</div>
 		);
 	}
