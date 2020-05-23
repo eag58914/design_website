@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './contactForm.css';
 
 class ContactForm extends Component {
 	handleSubmit(e) {
@@ -31,18 +32,18 @@ class ContactForm extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="main-form">
 				<form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
 					<div>
-						<label for="name">Name</label>
+						<label htmlFor="name">Name</label>
 						<input type="text" className="form-control" id="name" />
 					</div>
 					<div>
-						<label for="exampleInputEmail1">Email address</label>
+						<label htmlFor="exampleInputEmail1">Email address</label>
 						<input type="email" id="email" aria-describedby="emailHelp" />
 					</div>
 					<div>
-						<label for="message">Message</label>
+						<label htmlFor="message">Message</label>
 						<textarea rows="5" id="message" />
 					</div>
 					<button type="submit">Submit</button>
