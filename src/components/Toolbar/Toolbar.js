@@ -1,6 +1,8 @@
 import React from 'react';
 import './Toolbar.css';
+import {Link } from 'react-router-dom'
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
+import logo from '../images/ALH.jpg'
 
 const toolbar = (props) => (
 	<header className="toolbar">
@@ -11,7 +13,7 @@ const toolbar = (props) => (
 			<div className="spacer" />
 			<div className="toolbar_navigation-items">
 				<div className="toolbar__logo">
-					<a href="/main"> The Logo</a>
+					<Link to="/main">Amanda Lorraine Hirsch</Link>
 				</div>
 			</div>
 		</nav>

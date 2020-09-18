@@ -1,9 +1,12 @@
 import React from 'react';
 import './SideDrawer.css';
+import{ Link } from 'react-router-dom'
 import LinkedinLogo from '../../images/linkedin.png';
 import InstagramLogo from '../../images/instagram.png';
 import TwitterLogo from '../../images/twitter.png';
 import Aimage from '../../images/ALO2.JPG';
+
+
 const sideDrawer = (props) => {
 	let drawerClasses = 'side-drawer';
 	if (props.show) {
@@ -16,15 +19,15 @@ const sideDrawer = (props) => {
 					<img src={Aimage} alt="a_image" className="a-image" />
 				</div>
 				<div className="nav-container">
-					<a href="/" className="text-links">
+					<Link   className="text-links" to="/">
 						HOME
-					</a>
-					<a href="/projects" className="text-links">
+					</Link>
+					<Link  className="text-links"  to="/projects">
 						PROJECTS
-					</a>
-					<a href="/contact" className="text-links">
+					</Link>
+					<Link  className="text-links"  to="/contact">
 						ABOUT ME
-					</a>
+					</Link>
 				</div>
 				<ul>
 					<li>
