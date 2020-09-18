@@ -4,8 +4,14 @@ body {
 		'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	height: 100%;
+	height: 75%;
 	background-color: whitesmoke;
+	background-image: url('./components/images/ALH.jpg');
+	background-position: center;
+   
+    background-size: auto;
+
+	
 }
 
 code {
@@ -13,4 +19,5 @@ code {
 }
 html {
 	height: 100%;
+	
 }
