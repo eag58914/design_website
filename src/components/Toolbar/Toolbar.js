@@ -2,7 +2,7 @@ import React from 'react';
 import './Toolbar.css';
 import {Link } from 'react-router-dom'
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
-import logo from '../images/ALH.jpg'
+
 
 const toolbar = (props) => (
 	<header className="toolbar">
