@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import MainPage from '../src/pages/MainPage/MainPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
@@ -32,13 +32,13 @@ class App extends Component {
 				<Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
 				<SideDrawer show={this.state.SideDrawerOpen} />
 				{backDrop}
-				<Router>
+				
 					<Switch>
-						<Route path="/main" render={() => <MainPage />} />
-						<Route path="/contact" render={() => <ContactPage />} />
-						<Route path="/projects" render={() => <ProjectsPage />} />
+						<Route  exact path="/main" render={() => <MainPage />} />
+						<Route  exact path="/contact" render={() => <ContactPage />} />
+						<Route  exact path="/projects" render={() => <ProjectsPage />} />
 					</Switch>
-				</Router>
+				
 				<StickyFooter
 					bottomThreshold={40}
 					normalStyles={{
